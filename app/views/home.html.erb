@@ -1,6 +1,10 @@
 
-<p id="my-hidden-text" class="hidden">
-  This is hidden text.
-</p>
+<div data-controller="toggle-hidden">
 
-<button onclick="toggleTextVisibility()">Toggle visibility</button>
+  <p data-toggle-hidden-target="text" class="hidden">
+    This is hidden text.
+  </p>
+
+  <button data-action="click->toggle-hidden#toggle">Toggle visibility</button>
+
+</div>
