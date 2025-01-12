@@ -1,0 +1,18 @@
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<p id="my-hidden-text" class="hidden">
+  This is hidden text.
+</p>
+
+<button onclick="toggleTextVisibility()">Toggle visibility</button>
+
+<script>
+  function toggleTextVisibility() {
+    const text = document.getElementById('my-hidden-text');
+    text.classList.toggle('hidden');
+  }
+</script>
